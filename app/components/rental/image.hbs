@@ -1,0 +1,11 @@
+{{#if this.isLarge}}
+<div class="image large">
+    <img ...attributes>
+    <small role="button" style="cursor: pointer;" {{on "click" this.toggleSize}}>View Smaller</small>
+</div>
+{{else}}
+<div class="image">
+    <img ...attributes>
+    <small role="button" style="cursor: pointer;" {{on "click" this.toggleSize}}>View Larger</small>
+</div>
+{{/if}}
